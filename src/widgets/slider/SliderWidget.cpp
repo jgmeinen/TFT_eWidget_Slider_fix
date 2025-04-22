@@ -218,6 +218,8 @@ void SliderWidget::drawKnob(uint16_t kpos)
 {
   uint16_t x, y;
 
+  _spr->fillRect(0,0,_sxe - _sxs , _sye - _sys, _slotBgColor);
+  
   if(_horiz) {
     x = _xpos + kpos - 1;
     y = _ypos - _kheight/2 - 1;
